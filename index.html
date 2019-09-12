@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Toay docs</title>
+  <link rel="shortcut icon" href="//static.toay.org/public/image/toay.org/logo/icon-transparent.64.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//static.toay.org/public/lib/docsify/v4.8.6/themes/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name:'Toay docs',
+      nameLink:'/',
+      themeColor:'#565656',
+      noEmoji: true,
+      mergeNavbar: false,
+      loadNavbar: true,
+      loadSidebar: true,
+      coverpage: true,
+      auto2top: true,
+      subMaxLevel: 3,
+      maxLevel: 4,
+      search: {
+        noData: {
+          '/de-de/': 'Keine Ergebnisse!',
+          '/zh-cn/': '没有结果!',
+          '/': 'No results!'
+        },
+        paths: 'auto',
+        placeholder: {
+          '/de-de/': 'Suche',
+          '/zh-cn/': '搜索',
+          '/': 'Search'
+        }
+      },
+    }
+  </script>
+  <script src="//static.toay.org/public/lib/docsify/v4.8.6/docsify.min.js" data-coverpage data-router></script>
+  <script src="//static.toay.org/public/lib/docsify/v4.8.6/plugins/search.min.js"></script>
+  <script src="//static.toay.org/public/lib/docsify/v4.8.6/plugins/pagination.min.js"></script>
+  <script src="//static.toay.org/public/lib/docsify/v4.8.6/plugins/copy-code.min.js"></script>
+  <script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+</script>
+</body>
+</html>
